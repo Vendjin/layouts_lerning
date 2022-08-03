@@ -1,0 +1,37 @@
+body { /*для всего боди*/
+    background-color: khaki;
+}
+
+h2 { /*для всех заголовков h2*/
+    color: red;
+    text-align: center;
+}
+
+.author { /*для класса author*/
+    color: blue;
+}
+
+#begin{ /*для элемента с id=begin*/
+    color: orange;
+}
+
+#two {
+    font-weight: bold; /*жирность нашего текста*/
+}
+
+#three{
+    font-style: italic; /*тип шрифта*/
+}
+
+#four {
+    text-decoration: underline; /*декорация текста*/
+}
+
+#five {
+    font-size: 30px; /*размер шрифта*/
+}
+
+.text{
+    font-weight: 800;
+    text-transform: uppercase; /*весь текст в верхнем регистре*/
+}
