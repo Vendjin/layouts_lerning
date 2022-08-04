@@ -1,0 +1,26 @@
+.body {
+    background-color: antiquewhite;
+}
+
+#name_book{
+    text-align: center;
+    color: orangered;
+    font-size: medium;
+}
+
+.header_first_leaf{
+    font-size: medium;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.chapter{
+    text-align: center;
+    color: red;
+    font-size: small;
+    font-weight: normal;
+}
+
+.italic{
+    font-style: italic;
+}
