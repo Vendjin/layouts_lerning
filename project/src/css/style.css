@@ -1,37 +1,61 @@
-body { /*для всего боди*/
-    background-color: khaki;
+body {
+	/*для всего боди*/
+	background: khaki;
+	/*бэкграунд для всего тела*/
 }
 
-h2 { /*для всех заголовков h2*/
-    color: red;
-    text-align: center;
+h2 {
+	/*для всех заголовков h2*/
+	color: red;
+	text-align: center;
 }
 
-.author { /*для класса author*/
-    color: blue;
+.author {
+	/*для класса author*/
+	color: blue;
 }
 
-#begin{ /*для элемента с id=begin*/
-    color: orange;
+#begin {
+	/*для элемента с id=begin*/
+	color: orange;
 }
 
 #two {
-    font-weight: bold; /*жирность нашего текста*/
+	font-weight: bold;
+	/*жирность нашего текста*/
 }
 
-#three{
-    font-style: italic; /*тип шрифта*/
+#three {
+	font-style: italic;
+	/*тип шрифта*/
 }
 
 #four {
-    text-decoration: underline; /*декорация текста*/
+	text-decoration: underline;
+	/*декорация текста*/
 }
 
 #five {
-    font-size: 30px; /*размер шрифта*/
+	font-size: 30px;
+	/*размер шрифта*/
 }
 
-.text{
-    font-weight: 800;
-    text-transform: uppercase; /*весь текст в верхнем регистре*/
+.text {
+	font-weight: 800;
+	text-transform: uppercase;
+	/*весь текст в верхнем регистре*/
+}
+
+.box {
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	padding: 20px;
+	/* padding: 20px 50px; /* в таком варианте 20 top & bottom, a 50 left & right */
+	/* padding: 20px 50px 40px 60px; в таком варианте 20 top, 50 right, 40 bottom, 60 left  */
+	/* border-width: 3px;
+    border-style: solid;
+    border-color: black; */
+	border: 3px black solid;
+	margin: 5px;
 }
