@@ -1,99 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--самый главный тэг-->
+	<!--самый главный тэг-->
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- для красивого отображения на телефонах -->
-	<meta name="discription" content="Это мой первый пример страницы" />
-	<meta name="author" content="Andrey" />
-	<!-- dfdsfdfsd -->
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css" />
-	<!--подключаем css стили-->
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- для красивого отображения на телефонах -->
+		<meta name="discription" content="Это мой первый пример страницы" />
+		<meta name="author" content="Andrey" />
+		<!-- dfdsfdfsd -->
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<!--подключаем css стили-->
+	</head>
 
-<body>
-	<header>
-		<h1>
-			ALIS'S ADVENTURES
-			<br />
-			<!--br тег переноса-->
-			IN WONDERLAND
-		</h1>
-		<h2 class="author">By Lewis Carroll</h2>
-		<h3>The Millennium fulcrum Edition 3.0</h3>
+	<body>
+		<header>
+			<h1>
+				ALIS'S ADVENTURES
+				<br />
+				<!--br тег переноса-->
+				IN WONDERLAND
+			</h1>
+			<h2 class="author">By Lewis Carroll</h2>
+			<h3>The Millennium fulcrum Edition 3.0</h3>
+
+			<hr />
+			<!--тэг линия-->
+			<h2>Contents</h2>
+		</header>
+
+		<div class="expample">
+			<nav>
+				<ol type="I" start="1">
+					<!--type то как мы хотим видеть нашу нумирацию, а start с какого начинать нумирацию-->
+					<li id="begin">Chapter 1</li>
+					<li id="two">Chapter 2</li>
+					<li id="three">Chapter 3</li>
+					<li id="four">Chapter 4</li>
+					<li id="five ">Chapter 5</li>
+					<li>Chapter 6</li>
+					<li>Chapter 7</li>
+					<li>Chapter 8</li>
+					<li>Chapter 9</li>
+					<li>Chapter 10</li>
+					<li>Chapter 11</li>
+					<li>Chapter 12</li>
+				</ol>
+			</nav>
+		</div>
+		
 
 		<hr />
-		<!--тэг линия-->
-		<h2>Contents</h2>
-	</header>
-	<nav>
-		<ol type="I" start="1">
-			<!--type то как мы хотим видеть нашу нумирацию, а start с какого начинать нумирацию-->
-			<li id="begin">Chapter 1</li>
-			<li id="two">Chapter 2</li>
-			<li id="three">Chapter 3</li>
-			<li id="four">Chapter 4</li>
-			<li id="five ">Chapter 5</li>
-			<li>Chapter 6</li>
-			<li>Chapter 7</li>
-			<li>Chapter 8</li>
-			<li>Chapter 9</li>
-			<li>Chapter 10</li>
-			<li>Chapter 11</li>
-			<li>Chapter 12</li>
-		</ol>
-	</nav>
+		<h2>CHAPTER I. Down the Rabbit-Hole</h2>
 
-	<hr />
-	<h2>CHAPTER I. Down the Rabbit-Hole</h2>
+		<!--шапка сайта-->
+		<header></header>
 
-	<!--шапка сайта-->
-	<header></header>
+		<!--навигационное меню-->
+		<nav></nav>
 
-	<!--навигационное меню-->
-	<nav></nav>
+		<!--оформление записи в блоге, часть статьи-->
+		<article></article>
 
-	<!--оформление записи в блоге, часть статьи-->
-	<article></article>
+		<!--секция на сайте-->
+		<section></section>
 
-	<!--секция на сайте-->
-	<section></section>
+		<!--колонка где нибудь сбоку на сайте-->
+		<aside></aside>
 
-	<!--колонка где нибудь сбоку на сайте-->
-	<aside></aside>
+		<!--основное содержание документа-->
+		<main>
+			<p>
+				Then I would never talk to that person about boa constrictors, or primeval forests,
+				or stars. I would bring myself down to his level.
+				<span class="text">I would talk to him about bridge, and golf</span>
+				, and politics, and neckties. And the grown-up would be greatly pleased to have met
+				such a sensible man.
+			</p>
 
-	<!--основное содержание документа-->
-	<main>
-		<p>
-			Then I would never talk to that person about boa constrictors, or primeval forests,
-			or stars. I would bring myself down to his level.
-			<span class="text">I would talk to him about bridge, and golf</span>
-			, and politics, and neckties. And the grown-up would be greatly pleased to have met
-			such a sensible man.
-		</p>
+			<div>
+				<a href="https://webref.ru/">Какой то текст ссылки</a>
+				<img
+					src="https://vjoy.cc/wp-content/uploads/2020/10/dlya_dushi_35_13130628.jpg"
+					alt="Дерево"
+				/>
+			</div>
 
-		<div class="box">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias neque nemo
-			doloremque illum, voluptatum vel, commodi nisi itaque numquam modi quos facere optio
-			iure laboriosam suscipit similique ullam nostrum.
-		</div>
-		<div class="box">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officia maxime maiores
-			consectetur nihil reiciendis consequuntur deserunt! Neque sequi nemo, praesentium
-			possimus itaque excepturi, quibusdam aliquam exercitationem ratione deserunt
-			assumenda?
-		</div>
-	</main>
+			<div class="box">
+				Бокс без параметра box-sizing, хотя мы задали парметр 300*300, а по факту имеем
+				размер 346*346
+			</div>
+			<div class="box_size">Бокс с параметром box-sizing</div>
 
-	<!--адреес нашей компании-->
-	<address></address>
+			<div class="box1">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sint autem nulla
+				exercitationem iure modi, recusandae magni cum rerum, qui assumenda vero molestiae
+				aut? Quidem omnis illum voluptates atque! Explicabo.
+			</div>
+			<div class="box1">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis provident eveniet
+				atque eos ullam mollitia ratione natus. Deleniti vel sed quae praesentium, atque
+				veritatis architecto totam reprehenderit eos in tempora.
+			</div>
 
-	<!--подвал нашего сайта-->
-	<footer></footer>
-</body>
 
+			<div class="example_card">
+				<div class="box_card">
+					BOX1
+				</div>
+				<div class="box_card">
+					BOX2
+				</div>
+				<div class="box_card red">
+					BOX3
+				</div>
+			</div>
+		</main>
+
+		<!--адреес нашей компании-->
+		<address></address>
+
+		<!--подвал нашего сайта-->
+		<footer></footer>
+	</body>
 </html>
