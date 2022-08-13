@@ -35,7 +35,7 @@ h2 {
 	/*тип шрифта*/
 }
 
-ц #four {
+#four {
 	text-decoration: underline;
 	/*декорация текста*/
 }
@@ -52,6 +52,7 @@ h2 {
 }
 
 .box {
+	display: inline-block;
 	width: 300px;
 	height: 300px;
 	background-color: green;
@@ -82,6 +83,8 @@ img {
 	width: 300px;
 	/* выставить картинку по центру */
 	margin: 0 auto;
+	/* обтекание текста по левой строне */
+	float: right; 
 }
 
 a {
@@ -94,6 +97,8 @@ a {
 .box1 {
 	/* превращаем наши box1 в inline-block */
 	display: inline-block;
+	/* выравнивание блока по вертикали, ОБЯЗАТЕЛЬНО display: inset-block: должен стоять; */
+	vertical-align: top;
 	box-sizing: border-box;
 	width: 300px;
 	height: 300px;
@@ -149,6 +154,4 @@ nav {
 	left: 80px;
 	z-index: -1;
 	background-color: red
-	
-	
 }
