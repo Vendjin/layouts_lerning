@@ -342,16 +342,17 @@ h2.title {
 	min-height: 167px;
 	padding: 57px 0 67px 0;
 	background: url("../img/backgrounds/footer_bg.jpg") center center/cover no-repeat;
-}
-
-.footer .lincs {
 	font-family: "Roboto";
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 21px;
 	text-align: center;
-	text-decoration:none;
-	text-decoration-line: underline;
-
 	color: #888888;
+}
+
+.footer .lincs a {
+	text-decoration: none;
+	color: #888888;
+	visited: #888888;
+	text-decoration-line: underline;
 }
