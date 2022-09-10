@@ -4,108 +4,108 @@
 } */
 
 body {
-	/*для всего боди*/
-	background: khaki;
-	/*бэкграунд для всего тела*/
+    /*для всего боди*/
+    background: khaki;
+    /*бэкграунд для всего тела*/
 }
 
 h2 {
-	/*для всех заголовков h2*/
-	color: red;
-	text-align: center;
+    /*для всех заголовков h2*/
+    color: red;
+    text-align: center;
 }
 
 .author {
-	/*для класса author*/
-	color: blue;
+    /*для класса author*/
+    color: blue;
 }
 
 #begin {
-	/*для элемента с id=begin*/
-	color: orange;
+    /*для элемента с id=begin*/
+    color: orange;
 }
 
 #two {
-	font-weight: bold;
-	/*жирность нашего текста*/
+    font-weight: bold;
+    /*жирность нашего текста*/
 }
 
 #three {
-	font-style: italic;
-	/*тип шрифта*/
+    font-style: italic;
+    /*тип шрифта*/
 }
 
 #four {
-	text-decoration: underline;
-	/*декорация текста*/
+    text-decoration: underline;
+    /*декорация текста*/
 }
 
 #five {
-	font-size: 30px;
-	/*размер шрифта*/
+    font-size: 30px;
+    /*размер шрифта*/
 }
 
 .text {
-	font-weight: 800;
-	text-transform: uppercase;
-	/*весь текст в верхнем регистре*/
+    font-weight: 800;
+    text-transform: uppercase;
+    /*весь текст в верхнем регистре*/
 }
 
 .box {
-	display: inline-block;
-	width: 300px;
-	height: 300px;
-	background-color: green;
-	padding: 20px;
-	/* padding: 20px 50px; /* в таком варианте 20 top & bottom, a 50 left & right */
-	/* padding: 20px 50px 40px 60px; в таком варианте 20 top, 50 right, 40 bottom, 60 left  */
-	/* border-width: 3px;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    padding: 20px;
+    /* padding: 20px 50px; /* в таком варианте 20 top & bottom, a 50 left & right */
+    /* padding: 20px 50px 40px 60px; в таком варианте 20 top, 50 right, 40 bottom, 60 left  */
+    /* border-width: 3px;
     border-style: solid;
     border-color: black; */
-	border: 3px black solid;
-	margin: 5px;
+    border: 3px black solid;
+    margin: 5px;
 }
 
 .box_size {
-	box-sizing: border-box;
-	width: 300px;
-	height: 300px;
-	background-color: green;
-	padding: 50px;
-	border: 3px black solid;
-	margin: 5px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    padding: 50px;
+    border: 3px black solid;
+    margin: 5px;
 }
 
 img {
-	/* превращаем картинку в блок что бы далее ее можно было выставить по центру */
-	display: block;
-	box-sizing: border-box;
-	width: 300px;
-	/* выставить картинку по центру */
-	margin: 0 auto;
-	/* обтекание текста по левой строне */
-	float: right; 
+    /* превращаем картинку в блок что бы далее ее можно было выставить по центру */
+    display: block;
+    box-sizing: border-box;
+    width: 300px;
+    /* выставить картинку по центру */
+    margin: 0 auto;
+    /* обтекание текста по левой строне */
+    float: right;
 }
 
 a {
-	/*  отступы по бокам от самого текста*/
-	padding: 20px;
-	/* margin у ссылки добавляет отступы по т олько бокам тк он строчный*/
-	margin: 20px;
+    /*  отступы по бокам от самого текста*/
+    padding: 20px;
+    /* margin у ссылки добавляет отступы по т олько бокам тк он строчный*/
+    margin: 20px;
 }
 
 .box1 {
-	/* превращаем наши box1 в inline-block */
-	display: inline-block;
-	/* выравнивание блока по вертикали, ОБЯЗАТЕЛЬНО display: inset-block: должен стоять; */
-	vertical-align: top;
-	box-sizing: border-box;
-	width: 300px;
-	height: 300px;
-	background-color: green;
-	padding: 50px;
-	border: 3px black solid;
-	margin: 5px;
+    /* превращаем наши box1 в inline-block */
+    display: inline-block;
+    /* выравнивание блока по вертикали, ОБЯЗАТЕЛЬНО display: block: должен стоять; */
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    padding: 50px;
+    border: 3px black solid;
+    margin: 5px;
 }
 
 /* хотим что бы наш nav был внутри блока expample и мы могли его позиционировать относительно
@@ -113,45 +113,45 @@ a {
  а то что двигаем position: absolute */
 /* .expample это родительский блок */
 .expample {
-	/* виды позиционирования, static, relative, absolute, fixed, inherit
-	fixed прилипает к странице, листаешь, о оно ползет за тобой
-	inherit свойство берем и наследуем от родителя*/
-	position: relative;
-	background-color: #aeaeae;
-	height: 300px;
+    /* виды позиционирования, static, relative, absolute, fixed, inherit
+    fixed прилипает к странице, листаешь, о оно ползет за тобой
+    inherit свойство берем и наследуем от родителя*/
+    position: relative;
+    background-color: #aeaeae;
+    height: 300px;
 }
 
 /* nav дочерний блок, лежит в .expample */
 nav {
-	/* position позволяет сдвигать элементы, тем самым позиционируя на страницы,
-	 можно даже перекрывать	други, те как бы накладывая, не тоже самое что и margin,
-	  помогает выравнить элементы которые нас не слушаются и съезжают */
-	position: absolute;
-	left: 100px;
-	top: 10px;
-	/* top, bottom, right, left */
+    /* position позволяет сдвигать элементы, тем самым позиционируя на страницы,
+     можно даже перекрывать	други, те как бы накладывая, не тоже самое что и margin,
+      помогает выравнить элементы которые нас не слушаются и съезжают */
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    /* top, bottom, right, left */
 }
 
-.example_card{
-	position: relative;
+.example_card {
+    position: relative;
 }
 
 .box_card {
-	display: inline-block;
-	box-sizing: border-box;
-	text-align: center;
-	width: 300px;
-	height: 300px;
-	background-color: green;
-	padding: 50px;
-	border: 3px black solid;
-	margin: 5px;
-	z-index: 5;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    padding: 50px;
+    border: 3px black solid;
+    margin: 5px;
+    z-index: 5;
 }
 
-.red{
-	position: absolute;
-	left: 80px;
-	z-index: -1;
-	background-color: red
+.red {
+    position: absolute;
+    left: 80px;
+    z-index: -1;
+    background-color: red
 }

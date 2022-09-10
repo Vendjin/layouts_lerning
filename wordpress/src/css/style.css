@@ -1,7 +1,13 @@
+/* подводим все элементы под один шаблон */
 * {
+	/* отвечает за правильное отображение ширины и высоты всех элементов с учетом margin и padding */
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+html {
+	font-family: 'Roboto';
 }
 /* блок css для того что бы элементы были сгруппированны в центре, в основной части сайта */
 .container {
@@ -255,7 +261,7 @@ h2.title {
 .finish .finish_wraper .finish_item .finish_round {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; 
 	margin: 0 auto;
 	width: 115px;
 	height: 115px;
