@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background: #1c1b21;
+	color: #fafafa;
+	font-size: 55px;
+	font-family: "Fira Sans", sans-serif;
+}
+
+.container {
+	border: 10px solid #6c38cc;
+	/* занимает все необходимое пространоство */
+	display: flex;
+	/* занимает только то пространство по размерам элементов */
+	/* display: inline-flex; */
+
+	/* выстраиваем по горизонтали, основная ось с лево на право */
+	/* flex-direction: row; */
+	/* выстраиваем по колонкам */
+	/* flex-direction: column; */
+
+	/* wrap будут переносить на новую строку если не влезается 
+    no wrap не будет переноситься */
+	/* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+
+
+    /* flex-flow равносильно 
+    flex-direction: и flex-wrap */
+    flex-flow: row wrap;
+}
+
+.item {
+	background: #232228;
+	border: 1px solid #6c38cc;
+	text-align: center;
+	/* width: 200px; */
+	width: calc(100% / 3);
+	padding: 10px;
+}
