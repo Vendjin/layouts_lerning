@@ -13,32 +13,132 @@ body {
 
 .container {
 	border: 10px solid #6c38cc;
-	/* занимает все необходимое пространоство */
+
+
+	/* РАСПОЛОЖЕНИЕ В ПРОСТРАНСТВЕ */
+
+	/* занимает все пространоство */
 	display: flex;
+
 	/* занимает только то пространство по размерам элементов */
 	/* display: inline-flex; */
 
+
+	/* РАСПОЛОЖЕНИЕ ПО ВЕРТИКАЛИ ИЛИ ПО ГОРИЗОНТАЛИ */
+
 	/* выстраиваем по горизонтали, основная ось с лево на право */
 	/* flex-direction: row; */
+	
 	/* выстраиваем по колонкам */
 	/* flex-direction: column; */
 
-	/* wrap будут переносить на новую строку если не влезается 
-    no wrap не будет переноситься */
+	
+	/* ПЕРНОСИТЬ ЭЛЕМЕНТЫ ИЛИ НЕТ */
+
+	/* wrap будут переносить на новую строку если не влезается */
 	/* flex-wrap: wrap; */
+
+    /* no wrap не будет переноситься */
     /* flex-wrap: nowrap; */
 
 
+	/* ШОРТКАТ */
     /* flex-flow равносильно 
     flex-direction: и flex-wrap */
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+
+
+	/* ВЫРАВНИВАНИЕ по основной оси */
+	/* justify-content: center; */
+
+	/* устанавливаем элементы на одинаковое расстояние друг от друга */
+	/* justify-content: space-between; */
+
+	/* устанавливаем элементы на одинаковое расстояние друг от друга вокруг, те первый элемент будет
+	иметь отспутп слева и последний отступ с права, а между соседними будет сумма отсупов соседних элементов*/
+	/* justify-content: space-around; */
+
+
+	/* ВЫРАВНИВАНИЕ по поперечной (второстепенной) */
+	/* height: 100vh;
+	align-items: center; */
+
+	/* выравнивает по самому большому элементу */
+	/* align-items: baseline; */
+
+	/* УСТАНВОИТЬ ЭЛЕМЕНТ В СЕРЕДИНЕ ДИВА без wrap*/
+	/* justify-content: center;
+	height: 100vh;
+	align-items: center; */
+	
+	/* УСТАНОВИТЬ БЛОК ИТЕМОВ ПО ЦЕНТРУ второстепенной офси С ПЕРЕНОСОМ  width: calc(100% / 3); */
+	/* варианты align-content: stretch, space-around, space-between */
+	/* flex-wrap: wrap;
+	height: 100vh;
+	justify-content: center;
+	align-content: center; */
+
+	flex-wrap: wrap;
+
+	/* row-gap: collum gap */
+	gap: 20px;
 }
 
 .item {
 	background: #232228;
 	border: 1px solid #6c38cc;
 	text-align: center;
-	/* width: 200px; */
-	width: calc(100% / 3);
+
+	/* свойство для переноса, будет 3 элемента в строке следующий перенесется на новую строку  работате с flex-wrap: wrap*/
+	/* width: calc(100% / 3); */
+	/* width: 100%; */
 	padding: 10px;
+
+
+	/* flex-wrap с flex-basis элементы займут всю ширину и будут переноситься*/
+	/* flex-basis: 300px;
+	flex-grow: 1; */
+
+	/* row-gap: collum gap 
+	вычистаем размер gap px * на количесвто пространств между столбцами
+	 и делим на количество столбцов*/
+	/* flex: 0 1 calc(100% / 3 - 20px * 2 / 3) */
+
+
+	/* auto margin: ; */
+
+	
+}
+
+.container_size {
+	border: 10px solid #6c38cc;
+	display: flex;
+}
+
+.item_size{
+	background: #232228;
+	border: 1px solid #6c38cc;
+	text-align: center;
+	padding: 10px;
+	flex-basis: 300px;
+	flex-grow: 1;
+}
+
+.item_size1 {
+	/* гроу растягиваться */
+	/* flex-grow: 1; */
+	/* шринк - уменьшаться */
+	/* flex-shrink: 1; */
+	/* базовый размер после которых будут применяться свойства */
+	/* flex-basis: 300px; */
+	/* сокращенная запись */
+	flex: 1 1 300px;
+}
+
+.item_size2{
+	flex-grow: 5;
+	flex-shrink: 10;
+	flex-basis: 100px;
+
+	flex: 5 10 100px;
 }
