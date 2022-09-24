@@ -1,78 +1,78 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-	max-width: 1440px;
-	display: flex;
-	margin: 0 auto;
-	justify-content: space-between;
-	align-items: center;
-	margin: 22px 38px 22px 26px;
+    max-width: 1440px;
+    display: flex;
+    /*margin: 0 auto;*/
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 38px 22px 26px;
 }
 
 .header_logo {
-	display: flex;
-	/* расстояние между логитипом и кнопкой */
-	gap: 0 48px;
+    display: flex;
+    /* расстояние между логитипом и кнопкой */
+    gap: 0 48px;
 }
 
 .header_button {
-	display: flex;
-	align-items: center;
-	/* расстояние между занчком меню и Все курсы */
-	gap: 0 8px;
-	background: none;
-	border: 2px solid #0018ed;
-	border-radius: 32px;
-	padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    /* расстояние между занчком меню и Все курсы */
+    gap: 0 8px;
+    background: none;
+    border: 2px solid #0018ed;
+    border-radius: 32px;
+    padding: 16px 32px;
 
-	font-family: "Source Sans Pro";
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 25px;
-	color: #0018ed;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #0018ed;
 
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .header_menu {
-	display: flex;
-	gap: 0 32px;
-	align-items: center;
+    display: flex;
+    gap: 0 32px;
+    align-items: center;
 }
 
 .header_menu ul {
-	list-style: none;
-	display: flex;
-	gap: 0 23px;
+    list-style: none;
+    display: flex;
+    gap: 0 23px;
 }
 
 .header_menu ul > li {
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 120%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
 }
 
 .header_menu ul > li > a {
-	text-decoration: none;
-	color: #2d2e3a;
+    text-decoration: none;
+    color: #2d2e3a;
 }
 
 .header_menu ul > li > a:hover {
-	text-decoration: none;
-	color: #0018ed;
+    text-decoration: none;
+    color: #0018ed;
 }
 
 .header_menu > a {
-	display: flex;
-	gap: 0 8px;
-	align-items: center;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 120%;
-	color: #2d2e3a;
-	text-decoration: none;
+    display: flex;
+    gap: 0 8px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #2d2e3a;
+    text-decoration: none;
 }
