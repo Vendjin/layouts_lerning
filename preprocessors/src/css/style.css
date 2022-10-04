@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  background: aliceblue;
+  border: aqua;
+  color: red;
+}
+
+.holder {
+  margin-top: 50px;
+  min-width: 100vw;
+  min-height: 10vh;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  display: flex;
+}
+
+.text {
+  color: red;
+  font-size: 3em;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+}
+
+.block {
+  background-color: black;
+}
+.block h3 {
+  color: azure;
+}
+.block_color {
+  background: white;
+}
+.block_color button {
+  display: block;
+  width: 250px;
+  height: 200px;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

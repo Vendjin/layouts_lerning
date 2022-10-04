@@ -1,0 +1,55 @@
+$text_color: red
+
+//миксин в css
+@mixin box
+    display: block
+    width: 250px
+    height: 200px
+    background-color: blue
+
+
+*
+    margin: 0
+    border: 0
+    box-sizing: border-box
+
+h1
+    margin: 0
+    background: aliceblue
+    border: aqua
+    color: $text_color
+
+.holder
+    margin-top: 50px
+    min-width: 100vw
+    min-height: 10vh
+    background-color: bisque
+    display: flex
+    align-items: center
+    justify-content: center
+
+.center
+    background-color: black
+    height: 300px
+    width: 300px
+    display: flex
+
+.text
+    color: $text_color
+    font-size: 3em
+    margin: auto
+    text-align: center
+
+
+h2
+    color: $text_color
+
+.block
+    background-color: black
+    h3
+        color: azure
+    //как бы продолжаем наш класс
+    &_color
+        background: white
+        button
+            @include box
