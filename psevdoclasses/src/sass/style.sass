@@ -1,0 +1,43 @@
+*
+    box-sizing: border-box
+
+button
+    width: 250px
+    height: 50px
+    background-color: bisque
+    border: none
+    cursor: pointer
+    //установка задержки на изменение
+    transition: 1s all
+    //hover - изменения при наведении
+    &:hover
+        background-color: green
+        color: white
+    //active - изменения при зажатии и нажатии
+    &:active
+        background-color: orange
+    //focus - изменение состояния до нажатия на следующий элемент
+    &:focus
+        background-color: gray
+
+.circle
+    width: 50px
+    height: 50px
+    background-color: green
+    border-radius: 100%
+    margin-top: 10px
+
+    &:nth-child(2n)
+        background-color: red
+
+    &:before
+        content: ''
+        display: block
+        height: 2px
+        background-color: black
+        width: 0%
+        transition: 0.5s
+
+    &:hover
+        &:before
+            width: 100%

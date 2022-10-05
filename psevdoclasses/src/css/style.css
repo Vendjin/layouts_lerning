@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  background-color: bisque;
+  border: none;
+  cursor: pointer;
+  transition: 1s all;
+}
+button:hover {
+  background-color: green;
+  color: white;
+}
+button:active {
+  background-color: orange;
+}
+button:focus {
+  background-color: gray;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+.circle:nth-child(2n) {
+  background-color: red;
+}
+.circle:before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: black;
+  width: 0%;
+  transition: 0.5s;
+}
+.circle:hover:before {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
