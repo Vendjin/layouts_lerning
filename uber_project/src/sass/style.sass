@@ -1,8 +1,10 @@
+$black_text: #222222
+$white_text: #FFFFFF
+
 *
     font-family: "Roboto", sans-serif
 
 /*правило для блока, что бы он поднялся под шапку
-
 header
     position: relative
     height: 50px
@@ -25,7 +27,7 @@ nav
         font-weight: 300
         font-size: 15px
         text-decoration: none
-        color: #FFFFFF
+        color: $white_text
 
     .menu_item
         border-right: 2px dotted black
@@ -47,7 +49,7 @@ nav
 .subheader_official
     font-weight: 400
     font-size: 13px
-    color: #FFFFFF
+    color: $white_text
 
     /*opacity: 0.5;
     margin-top: 8px
@@ -57,7 +59,7 @@ nav
         font-weight: 300
         font-size: 12px
         text-align: right
-        color: #FFFFFF
+        color: $white_text
         margin-top: 24px
 
     .subheader_phone
@@ -69,7 +71,7 @@ nav
         text-align: center
         text-transform: uppercase
         text-decoration: none
-        color: #FFFFFF
+        color: $white_text
 
     .subheader_button
         margin-top: 24px
@@ -81,7 +83,7 @@ nav
         text-transform: uppercase
         font-weight: 400
         font-size: 14px
-        color: #FFFFFF
+        color: $white_text
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 
 .promo
@@ -95,7 +97,7 @@ nav
         line-height: 60px
         text-align: center
         text-transform: uppercase
-        color: #FFFFFF
+        color: $white_text
         margin: 0
 
     .promo_subheader
@@ -104,7 +106,7 @@ nav
         line-height: 36px
         text-align: center
         text-transform: uppercase
-        color: #FFFFFF
+        color: $white_text
         margin-top: 22px
         margin: 0
 
@@ -113,7 +115,7 @@ nav
         font-size: 18px
         line-height: 24px
         text-align: center
-        color: #FFFFFF
+        color: $white_text
         margin-top: 16px
 
     .promo_btn
@@ -127,7 +129,7 @@ nav
         font-weight: 400
         font-size: 18px
         text-transform: uppercase
-        color: #FFFFFF
+        color: $white_text
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
 
 .reason
@@ -135,6 +137,8 @@ nav
     padding: 20px 0 65px 0
 
 .label
+    position: relative
+    z-index: 2
     display: block
     margin: 0 auto
     width: 130px
@@ -145,17 +149,26 @@ nav
     font-size: 11px
     text-align: center
     text-transform: uppercase
-    color: #FFFFFF
+    color: $white_text
+
+    &_white
+        background: white
+        color: $black_text
 
 
 .title
+    position: relative
+    z-index: 2
     display: block
     margin-top: 40px
     font-weight: 700
     font-size: 38px
     text-align: center
     text-transform: uppercase
-    color: #222222
+    color: $black_text
+
+    &_white
+        color: $white_text
 
 .reason .reason_item
     display: flex
@@ -190,18 +203,25 @@ nav
             color: #202020
 
 .subtitle
+    position: relative
+    z-index: 2
     font-weight: 400
     font-size: 17px
     line-height: 21px
     text-align: center
-    color: #222222
+    color: $black_text
+
+    &_white
+        color: $white_text
 
 .mobile
     min-height: 865px
     padding: 45px 0 79px 0
     background: url("../img/backgrounds/cell_bg.jpg") center (center / cover) no-repeat
+
     .row
         margin-top: 32px
+
     &_item
         position: relative
         width: 320px
@@ -210,18 +230,25 @@ nav
         margin: 0 auto
         margin-bottom: 19px
         padding-top: 91px
+
         &_1
             background: url("../img/backgrounds/mobile_bg_1.jpg") center (center / cover) no-repeat
+
         &_2
             background: url("../img/backgrounds/mobile_bg_2.jpg") center (center / cover) no-repeat
+
         &_3
             background: url("../img/backgrounds/mobile_bg_3.jpg") center (center / cover) no-repeat
+
         &_4
             background: url("../img/backgrounds/mobile_bg_4.jpg") center (center / cover) no-repeat
+
         &_5
             background: url("../img/backgrounds/mobile_bg_5.jpg") center (center / cover) no-repeat
+
         &_6
             background: url("../img/backgrounds/mobile_bg_6.jpg") center (center / cover) no-repeat
+
         &_subtitle
             font-weight: 400
             font-size: 24px
@@ -229,6 +256,7 @@ nav
             text-align: center
             text-transform: uppercase
             color: #FFFFFF
+
         &_plus
             display: flex
             justify-content: center
@@ -245,5 +273,37 @@ nav
             height: 29px
             background: #000000
             cursor: pointer
+
             img
                 width: 55%
+
+.car
+    min-height: 895px
+    padding: 60px 0 140px 0
+    background: url("../img/backgrounds/cell_bg.jpg") center (center / cover) no-repeat
+    position: relative
+    
+    .black
+        position: absolute
+        top: 0
+        left: 0
+        height: 500px
+        width: 100%
+        background: black
+        z-index: 1
+
+    &_img
+        position: relative
+        z-index: 2
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 55px auto 0 auto
+
+    &_description
+        font-weight: 300
+        font-size: 17px
+        line-height: 24px
+        margin: 0 auto
+        text-align: center
+        color: $black_text

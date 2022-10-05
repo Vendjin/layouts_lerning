@@ -55,4 +55,13 @@ h2 {
   background-color: blue;
 }
 
+.back {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://pbs.twimg.com/profile_images/604644048/sign051.gif"), url("https://estherpgl.files.wordpress.com/2012/06/no-big-deal1.gif"), url("http://www.quicksprout.com/images/foggygoldengatebridge.jpg");
+  background-size: 80px, 300px, cover;
+  background-repeat: no-repeat;
+  background-position: 50% 90%, 50% bottom, center;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -142,6 +142,8 @@ nav {
 }
 
 .label {
+  position: relative;
+  z-index: 2;
   display: block;
   margin: 0 auto;
   width: 130px;
@@ -154,8 +156,14 @@ nav {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.label_white {
+  background: white;
+  color: #222222;
+}
 
 .title {
+  position: relative;
+  z-index: 2;
   display: block;
   margin-top: 40px;
   font-weight: 700;
@@ -163,6 +171,9 @@ nav {
   text-align: center;
   text-transform: uppercase;
   color: #222222;
+}
+.title_white {
+  color: #FFFFFF;
 }
 
 .reason .reason_item {
@@ -199,11 +210,16 @@ nav {
 }
 
 .subtitle {
+  position: relative;
+  z-index: 2;
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
   text-align: center;
   color: #222222;
+}
+.subtitle_white {
+  color: #FFFFFF;
 }
 
 .mobile {
@@ -266,6 +282,38 @@ nav {
 }
 .mobile_item_plus img {
   width: 55%;
+}
+
+.car {
+  min-height: 895px;
+  padding: 60px 0 140px 0;
+  background: url("../img/backgrounds/cell_bg.jpg") center center/cover no-repeat;
+  position: relative;
+}
+.car .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background: black;
+  z-index: 1;
+}
+.car_img {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 55px auto 0 auto;
+}
+.car_description {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  color: #222222;
 }
 
 /*# sourceMappingURL=style.css.map */
