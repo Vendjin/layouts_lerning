@@ -2,7 +2,7 @@ $black_text: #222222
 $white_text: #FFFFFF
 
 $main_color: #1EACC7
-$second_color:#FF5656
+$second_color: #FF5656
 
 @mixin button_hover
     &:hover
@@ -20,7 +20,7 @@ header
 nav
     position: fixed
     width: 100%
-    z-index: 2
+    z-index: 3
     height: 50px
     background-color: #212121
 
@@ -301,6 +301,7 @@ nav
                 height: 15px
                 background-color: $main_color
                 transition: 0.3s all
+
             &:hover
                 &:before, &:after
                     background-color: $second_color
@@ -338,3 +339,144 @@ nav
 
 .require
     padding: 66px 0 90px 0
+
+    &_block
+        margin: 33px 0
+
+        &_nombottom
+            margin-bottom: 0
+
+    &_title
+        font-weight: 400
+        font-size: 22px
+        margin-bottom: 20px
+        color: $main_color
+
+        &_red
+            color: $second_color
+
+    &_description
+        font-weight: 300
+        font-size: 17px
+        color: $main_color
+
+    &_list
+        list-style: none
+        padding-left: 50px
+
+        li
+            font-weight: 300
+            font-size: 17px
+            color: $black_text
+            margin-bottom: 10px
+            position: relative
+
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url("../icons/check_blue.png") center (center/cover) no-repeat
+
+    .warning
+        .require_title
+            color: $second_color
+
+        .require_list
+            li
+                &:before
+                    background: url("../icons/check_red.png") center (center/cover) no-repeat
+
+.world
+    min-height: 720px
+    padding: 46px 0 50px 0
+    background: #080816 url("../img/backgrounds/world_map_bg.jpg") center 100% no-repeat
+
+    a
+        font-weight: 400
+        font-size: 15px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 490px auto 0 auto
+        text-transform: uppercase
+        text-decoration: none
+        color: #1FBAD6
+
+footer
+    padding: 14px 23px 39px 23px
+
+    a
+        text-decoration: none
+
+.footer
+    &_divider
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+        margin: 0 auto
+
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+
+    &_wrapper > div
+        width: 33%
+
+        &:nth-child(3)
+            display: flex
+            justify-content: flex-end
+
+    &_social
+        width: 160px
+        display: flex
+        justify-content: space-between
+        &_item
+            width: 35px
+            height: 35px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #070716
+            border-radius: 100%
+
+    &_links
+        width: 450px
+        margin: 0 auto
+
+        &_main
+            display: flex
+            justify-content: space-between
+            padding: 0 10px
+
+            a
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+                text-transform: uppercase
+
+        &_sub
+            display: flex
+            justify-content: space-between
+            margin-top: 10px
+
+            a
+                color: #999999
+                font-size: 11px
+                font-weight: 300
+                text-transform: uppercase
+
+        &_lang
+            display: block
+            margin: 0 auto
+            color: #1fbad6
+            font-size: 11px
+            font-weight: 400
+            margin-top: 19px
+            text-transform: uppercase
+            text-align: center
