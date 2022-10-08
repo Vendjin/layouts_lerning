@@ -446,6 +446,9 @@ footer a {
   background-color: #070716;
   border-radius: 100%;
 }
+.footer_social_item i {
+  color: white;
+}
 .footer_links {
   width: 450px;
   margin: 0 auto;
