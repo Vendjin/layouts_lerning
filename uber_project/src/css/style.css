@@ -34,6 +34,9 @@ nav {
   border-right: 2px dotted black;
   padding-right: 45px;
 }
+.menu .menu_item:last-child {
+  border-right: none;
+}
 
 .subheader {
   margin-top: 50px;
@@ -392,7 +395,7 @@ nav {
 .world {
   min-height: 720px;
   padding: 46px 0 50px 0;
-  background: #080816 url("../img/backgrounds/world_map_bg.jpg") center 100% no-repeat;
+  background: #080816 url("../img/backgrounds/world_map_bg.jpg") center no-repeat;
 }
 .world a {
   font-weight: 400;
@@ -484,6 +487,44 @@ footer a {
   margin-top: 19px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (max-width: 2520px) {
+  .subheader_phone {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 1399px) {
+  .menu .menu_item {
+    padding-right: 28px;
+  }
+}
+@media (max-width: 1200px) {
+  .menu .menu_item {
+    padding-right: 15px;
+  }
+  .menu .menu_link {
+    font-size: 13px;
+  }
+  .promo_header {
+    font-size: 50px;
+  }
+  .reason_item {
+    align-items: flex-start;
+  }
+  .reason_description {
+    width: 300px;
+  }
+  .mobile_item {
+    width: 300px;
+  }
+  .mobile_item_subtitle {
+    font-size: 22px;
+  }
+  .car {
+    padding: 55px 0;
+    min-height: 840px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
