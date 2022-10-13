@@ -36,3 +36,136 @@
     .car
         padding: 55px 0
         min-height: 840px
+
+    .footer
+        &_wrapper > div
+            width: 50%
+            &:nth-child(1)
+                width: 25%
+            &:nth-child(3)
+                width: 25%
+        &_mobile_apps
+            display: flex
+            a
+                margin: 0 2px
+                img
+                    width: 100%
+
+@media (max-width: 991px)
+    .menu
+        //padding: 11px 0
+        .menu
+            &_item
+                padding-right: 9px
+                //white-space: nowrap
+            &_link
+                font-size: 10px
+                //white-space: nowrap
+
+    .subheader
+        img
+            width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 20px
+        &_button
+            width: 100%
+
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 25px
+    .reason
+        &_item
+            flex-direction: column
+            align-items: center
+        &_round
+            margin-bottom: 10px
+
+    .mobile
+        min-height: 700px
+
+        &_item
+            width: 100%
+            height: 200px
+            &_subtitle
+                position: absolute
+                font-size: 22px
+                top: 10%
+                left: 50%
+                transform: translate(-50%)
+
+    .car
+        min-height: 800px
+        &_img
+            width: 100%
+
+    .world
+        min-height: 650px
+
+    .footer
+        &_wrapper
+            flex-wrap: wrap
+        &_wrapper > div
+            width: 100%
+            display: flex
+            justify-content: center
+            margin-bottom: 20px
+            &:nth-child(1)
+                width: 100%
+            &:nth-child(3)
+                width: 100%
+                justify-content: center
+
+@media (max-width: 767px)
+    //.menu
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        top: 0
+        //спрячем меню слева за страницей
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+
+        .menu
+            &_item
+                padding-right: 0
+                border: none
+
+            &_link
+                font-size: 20px
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: white
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
