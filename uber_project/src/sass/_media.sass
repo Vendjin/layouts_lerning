@@ -14,6 +14,7 @@
         .menu
             &_item
                 padding-right: 15px
+
             &_link
                 font-size: 13px
 
@@ -24,12 +25,14 @@
     .reason
         &_item
             align-items: flex-start
+
         &_description
             width: 300px
 
     .mobile
         &_item
             width: 300px
+
             &_subtitle
                 font-size: 22px
 
@@ -40,14 +43,19 @@
     .footer
         &_wrapper > div
             width: 50%
+
             &:nth-child(1)
                 width: 25%
+
             &:nth-child(3)
                 width: 25%
+
         &_mobile_apps
             display: flex
+
             a
                 margin: 0 2px
+
                 img
                     width: 100%
 
@@ -57,32 +65,38 @@
         .menu
             &_item
                 padding-right: 9px
-                //white-space: nowrap
+            //white-space: nowrap
             &_link
                 font-size: 10px
-                //white-space: nowrap
+    //white-space: nowrap
 
     .subheader
         img
             width: 100%
+
         &_official
             font-size: 11px
+
         &_phone
             font-size: 20px
+
         &_button
             width: 100%
 
     .promo
         &_header
             font-size: 40px
+
         &_subheader
             font-size: 25px
     .reason
         &_item
             flex-direction: column
             align-items: center
+
         &_round
             margin-bottom: 10px
+            margin-right: 0
 
     .mobile
         min-height: 700px
@@ -90,6 +104,7 @@
         &_item
             width: 100%
             height: 200px
+
             &_subtitle
                 position: absolute
                 font-size: 22px
@@ -99,6 +114,7 @@
 
     .car
         min-height: 800px
+
         &_img
             width: 100%
 
@@ -108,13 +124,16 @@
     .footer
         &_wrapper
             flex-wrap: wrap
+
         &_wrapper > div
             width: 100%
             display: flex
             justify-content: center
             margin-bottom: 20px
+
             &:nth-child(1)
                 width: 100%
+
             &:nth-child(3)
                 width: 100%
                 justify-content: center
@@ -132,8 +151,9 @@
         width: 50%
         height: 100vh
         padding: 20px 15px
-        background-color: rgba(0,0,0, .8)
+        background-color: rgba(0, 0, 0, .8)
         transition: 0.6s all
+
         &_active
             left: 0
 
@@ -153,6 +173,7 @@
         transform: translateY(-50%)
         width: 30px
         height: 12px
+
         span
             display: block
             height: 2px
@@ -160,12 +181,212 @@
             background-color: white
             margin-bottom: 2px
             transition: 0.5s all
+
         &_active
             span
                 margin-bottom: -2px
+
                 &:nth-child(1)
                     transform: translateY(3px) rotate(-45deg)
+
                 &:nth-child(2)
                     display: none
+
                 &:nth-child(3)
                     transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+
+    .subheader
+        &_phone
+            font-weight: 400
+            font-size: 16px
+            color: #FFFFFF
+            text-align: center
+            margin: 13px 0 8px 0
+
+        &_button
+            width: 200px
+            height: 40px
+            font-weight: 400
+            font-size: 10px
+            text-align: center
+            display: block
+            margin: 0 auto
+
+    .promo
+        min-height: 340px
+
+        &_header
+            font-weight: 900
+            font-size: 40px
+            line-height: 40px
+            margin-bottom: 35px
+
+        &_subheader
+            font-size: 30px
+
+    .reason
+        &_subheader
+            text-align: center
+
+    .mobile
+        &_item
+            height: 350px
+
+@media (max-width: 575px)
+    nav
+        height: 30px
+    header
+        height: 30px
+    .menu
+        align-items: flex-start
+    .subheader
+        height: 60px
+        margin-top: 30px
+
+        &_official
+            display: none
+
+        &_logo
+            margin-top: 25px
+
+        &_phone
+            font-size: 10px
+            margin: 8px 0 5px 0
+
+        &_button
+            width: 110px
+            height: 30px
+    .promo
+        max-width: 320px
+        padding: 73px 0 35px 0
+
+        &_header
+            font-size: 35px
+
+        &_subheader
+            font-size: 20px
+            padding: 0 10px
+    .reason
+        .title
+            font-size: 15px
+
+        &_item
+            margin-top: 24px
+
+        &_text
+            font-size: 15px
+            font-weight: 300
+
+        &_round
+            width: 100px
+            height: 100px
+    .mobile
+        padding: 25px 0 45px 0
+
+        .title
+            margin-top: 16px
+            font-size: 15px
+
+        .subtitle
+            font-size: 14px
+
+        &_item
+            width: 290px
+            height: 254px
+
+            &_subtitle
+                font-size: 13px
+                top: 25%
+
+    .car
+        padding: 25px 0
+        min-height: 322px
+        background: black
+
+        .black
+            display: none
+
+        .title
+            display: none
+
+        .subtitle
+            display: none
+
+        &_img
+            margin-top: 35px
+
+        &_description
+            color: white
+
+    .require
+        padding: 20px 0 33px 0
+
+        .title
+            font-size: 15px
+            margin-top: 15px
+
+        &_title
+            margin-bottom: 10px
+            font-size: 15px
+
+        &_block
+            margin: 15px 0
+
+        &_list li
+            font-size: 13px
+            margin-bottom: 10px
+
+        &_description
+            font-size: 14px
+
+    .world
+        padding: 25px 0
+
+        .title
+            font-size: 15px
+            margin-top: 15px
+
+        .subtitle
+            font-size: 14px
+            margin-top: 15px
+
+    footer
+        padding: 24px 23px 0 23px
+
+        .footer
+
+            &_divider
+                width: 255px
+
+            &_wrapper
+                padding-top: 21px
+
+            &_wrapper > div
+                &:nth-child(1)
+                    order: 2
+
+                &:nth-child(2)
+                    order: 1
+
+                &:nth-child(3)
+                    order: 3
+
+            &_links
+                width: 380px
+
+                &_main
+                    padding: 0
+
+                    a
+                        font-size: 14px
+
+                &_sub
+                    flex-wrap: wrap
+                    justify-content: center
+
+                    a
+                        margin: 0 7px

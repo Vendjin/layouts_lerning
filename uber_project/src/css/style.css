@@ -100,6 +100,10 @@ nav {
   background-color: #1EACC7;
 }
 
+.xs-visible {
+  display: none;
+}
+
 .promo {
   min-height: 800px;
   background: url("../img/backgrounds/uber_bg.jpg") center center/cover no-repeat;
@@ -582,6 +586,7 @@ footer a {
   }
   .reason_round {
     margin-bottom: 10px;
+    margin-right: 0;
   }
   .mobile {
     min-height: 700px;
@@ -675,6 +680,204 @@ footer a {
   }
   .hamburger_active span:nth-child(3) {
     transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .subheader_phone {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 13px 0 8px 0;
+  }
+  .subheader_button {
+    width: 200px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .promo {
+    min-height: 340px;
+  }
+  .promo_header {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 35px;
+  }
+  .promo_subheader {
+    font-size: 30px;
+  }
+  .reason_subheader {
+    text-align: center;
+  }
+  .mobile_item {
+    height: 350px;
+  }
+}
+@media (max-width: 575px) {
+  nav {
+    height: 30px;
+  }
+  header {
+    height: 30px;
+  }
+  .menu {
+    align-items: flex-start;
+  }
+  .subheader {
+    height: 60px;
+    margin-top: 30px;
+  }
+  .subheader_official {
+    display: none;
+  }
+  .subheader_logo {
+    margin-top: 25px;
+  }
+  .subheader_phone {
+    font-size: 10px;
+    margin: 8px 0 5px 0;
+  }
+  .subheader_button {
+    width: 110px;
+    height: 30px;
+  }
+  .promo {
+    max-width: 320px;
+    padding: 73px 0 35px 0;
+  }
+  .promo_header {
+    font-size: 35px;
+  }
+  .promo_subheader {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .reason .title {
+    font-size: 15px;
+  }
+  .reason_item {
+    margin-top: 24px;
+  }
+  .reason_text {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .reason_round {
+    width: 100px;
+    height: 100px;
+  }
+  .mobile {
+    padding: 25px 0 45px 0;
+  }
+  .mobile .title {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+  .mobile .subtitle {
+    font-size: 14px;
+  }
+  .mobile_item {
+    width: 290px;
+    height: 254px;
+  }
+  .mobile_item_subtitle {
+    font-size: 13px;
+    top: 25%;
+  }
+  .car {
+    padding: 25px 0;
+    min-height: 322px;
+    background: black;
+  }
+  .car .black {
+    display: none;
+  }
+  .car .title {
+    display: none;
+  }
+  .car .subtitle {
+    display: none;
+  }
+  .car_img {
+    margin-top: 35px;
+  }
+  .car_description {
+    color: white;
+  }
+  .require {
+    padding: 20px 0 33px 0;
+  }
+  .require .title {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .require_title {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .require_block {
+    margin: 15px 0;
+  }
+  .require_list li {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .require_description {
+    font-size: 14px;
+  }
+  .world {
+    padding: 25px 0;
+  }
+  .world .title {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .world .subtitle {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  footer {
+    padding: 24px 23px 0 23px;
+  }
+  footer .footer_divider {
+    width: 255px;
+  }
+  footer .footer_wrapper {
+    padding-top: 21px;
+  }
+  footer .footer_wrapper > div:nth-child(1) {
+    order: 2;
+  }
+  footer .footer_wrapper > div:nth-child(2) {
+    order: 1;
+  }
+  footer .footer_wrapper > div:nth-child(3) {
+    order: 3;
+  }
+  footer .footer_links {
+    width: 380px;
+  }
+  footer .footer_links_main {
+    padding: 0;
+  }
+  footer .footer_links_main a {
+    font-size: 14px;
+  }
+  footer .footer_links_sub {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footer_links_sub a {
+    margin: 0 7px;
   }
 }
 
