@@ -731,6 +731,15 @@ footer a {
   }
   .menu {
     align-items: flex-start;
+    width: 85%;
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .menu_link {
+    display: block;
   }
   .subheader {
     height: 60px;
@@ -751,7 +760,6 @@ footer a {
     height: 30px;
   }
   .promo {
-    max-width: 320px;
     padding: 73px 0 35px 0;
   }
   .promo_header {
