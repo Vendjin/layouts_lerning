@@ -1,0 +1,66 @@
+.promo {
+  min-height: 40.625rem;
+  padding: 1.313rem 0 5.813rem 0;
+  background: url("../../img/bg/first_bg.jpg") center (center/cover) no-repeat;
+  margin: 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 90px;
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 42px;
+    color: $white-text;
+    text-transform: uppercase;
+  }
+
+  &__subheader {
+    font-weight: 500;
+    font-size: 24px;
+    color: $white-text;
+    text-transform: uppercase;
+    margin-top: 17px;
+  }
+
+  &__icons{
+    display: flex;
+    justify-content: space-around;
+    width: 424px;
+    max-height: 100px;
+    margin-top: 60px;
+  }
+  &__icon{
+    width: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: $white-text ;
+    img{
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link{
+    font-weight: 500;
+    font-size: 16px;
+    color: $white-text;
+    margin-top: 18px;
+    a{
+      color: $white-text;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+
