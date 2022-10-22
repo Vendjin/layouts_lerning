@@ -23,6 +23,18 @@
       max-width: 750px;
     }
   }
+
+  .catalog {
+    &__content {
+      justify-content: space-evenly;
+    }
+
+    &_active {
+      justify-content: space-evenly;
+    }
+
+  }
+
 }
 
 @media (max-width: 991px) {
@@ -86,6 +98,7 @@
 
   .carousel {
     position: relative;
+
     .container {
       width: 550px;
     }
@@ -94,11 +107,11 @@
       width: 100%;
     }
 
-    .slick-prev, .slick-next{
+    .slick-prev, .slick-next {
       display: none;
     }
 
-    .tns-nav{
+    .tns-nav {
       display: flex;
       position: absolute;
       bottom: -5%;
@@ -106,7 +119,8 @@
       transform: translateX(50%);
       gap: 35px;
       margin-top: 10px;
-      button{
+
+      button {
         width: 10px;
         height: 10px;
         background: black;
@@ -116,7 +130,6 @@
     }
   }
 }
-
 
 
 @media (max-width: 767px) {
@@ -151,6 +164,12 @@
       font-size: 14px;
 
       margin-top: 50px;
+    }
+  }
+
+  .catalog {
+    &__tab {
+      font-size: 10px;
     }
   }
 
@@ -226,7 +245,7 @@
     }
 
     &_submit {
-      width: 95%;
+      width: 245px;
       height: 45px;
     }
   }
@@ -295,6 +314,7 @@
   //}
   .carousel {
     position: relative;
+
     .container {
       width: 250px;
     }
@@ -303,18 +323,19 @@
       width: 100%;
     }
 
-    .slick-prev, .slick-next{
+    .slick-prev, .slick-next {
       display: none;
     }
 
-    .tns-nav{
+    .tns-nav {
       display: flex;
       position: absolute;
       bottom: -15%;
       right: 50%;
       transform: translateX(50%);
       gap: 35px;
-      button{
+
+      button {
         width: 10px;
         height: 10px;
         background: black;
@@ -323,4 +344,19 @@
       }
     }
   }
+  .feed {
+    &__item {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+
+    &__title, &__subtitle {
+      text-align: center;
+    }
+  }
+
 }
