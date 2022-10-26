@@ -359,4 +359,17 @@
     }
   }
 
+  .footer{
+    &__info{
+      width: 320px;
+      height: 190px;
+      padding: 25px 0 25px 0;
+
+    }
+    &__addr, &__phone{
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+  }
 }

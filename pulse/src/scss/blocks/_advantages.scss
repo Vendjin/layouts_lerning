@@ -15,7 +15,8 @@
     align-items: center;
     max-width: 269px;
   }
-  &__subtitle{
+
+  &__subtitle {
     margin-top: 35px;
     font-weight: 700;
     font-size: 18px;
@@ -23,16 +24,28 @@
     color: $black-text;
   }
 
-  &__description{
+  &__description {
     margin-top: 20px;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     color: $black-text;
-    a{
+
+    a {
       text-transform: uppercase;
       color: #FF0000;
+    }
+  }
+
+  &__icon {
+    &_beat {
+      animation-name: heartbeat;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      &:hover{
+        animation-play-state: paused;
+      }
     }
   }
 }

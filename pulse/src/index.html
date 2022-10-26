@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pulse</title>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -65,7 +64,7 @@
         <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
         <div class="advantages__wrapper">
             <div class="advantages__item">
-                <img src="icons/cup.svg" alt="cup">
+                <img src="icons/cup.svg" alt="cup" class="advantages__icon">
                 <div class="advantages__subtitle">Делимся опытом</div>
                 <div class="advantages__description">
                     Наши сотрудники всегда готовы поделиться своим опытом, так как сами
@@ -73,7 +72,7 @@
                 </div>
             </div>
             <div class="advantages__item">
-                <img src="icons/heart.svg" alt="heart">
+                <img src="icons/heart.svg" alt="heart" class="advantages__icon advantages__icon_beat">
                 <div class="advantages__subtitle">Заботимся о здоровье</div>
                 <div class="advantages__description">
                     Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и
@@ -81,7 +80,7 @@
                 </div>
             </div>
             <div class="advantages__item">
-                <img src="icons/shoe.svg" alt="shoe">
+                <img src="icons/shoe.svg" alt="shoe" class="advantages__icon">
                 <div class="advantages__subtitle">Учим бегать</div>
                 <div class="advantages__description">
                     Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в
@@ -109,7 +108,7 @@
     </div>
 </section>
 
-<section class="carousel">
+<div class="carousel">
     <div class="container">
         <div class="carousel__inner">
             <div>
@@ -125,7 +124,7 @@
         <button type="button" class="slick-prev"><img src="icons/arrow_left_icon.svg" alt="left_arrow"></button>
         <button type="button" class="slick-next"><img src="icons/arrow_right_icon.svg" alt="right_arrow"></button>
     </div>
-</section>
+</div>
 
 <section class="catalog">
     <div class="container">
@@ -554,13 +553,19 @@
     </div>
 </footer>
 
+
+<a href="#" class="pageup">
+    <img src="icons/up.svg" alt="up">
+</a>
+
+
 <div class="overlay">
     <div class="modal" id="consultation">
         <div class="modal__close">&times;</div>
         <div class="modal__subtitle">Просто заполните форму заявки</div>
         <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
         <form class="feed-form" action="#" method="post">
-            <input name="name" required placeholder="Ваше имя" type="text">
+            <input name="name" required minlength="3" placeholder="Ваше имя" type="text">
             <input name="phone" required placeholder="Ваш телефон" type="number">
             <input name="email" required placeholder="Ваш E-mail" type="email">
 
@@ -587,6 +592,7 @@
         <div class="modal__description">Наш менеджер свяжется с вами в ближайшее время!</div>
     </div>
 </div>
+
 <!--первый вариант слайдера-->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
