@@ -128,16 +128,6 @@
 
     }
 
-    &__btn {
-      width: 135px;
-      height: 44px;
-      color: $white-text;
-      background: $main-color;
-      border: none;
-      border-radius: 5px;
-
-    }
-
     //делаем лицевую и заднюю часть карточки
     &__wrapper {
       display: flex;
