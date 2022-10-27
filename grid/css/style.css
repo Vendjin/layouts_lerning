@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+
+    /*grid-template-columns: 200px 300px 200px;*/
+    /*grid-template-rows: 60px 100px 60px;*/
+    /*!*сокращение rows & column*!*/
+    /*grid-template: 60px 100px 60px / 200px 300px 200px;*/
+
+    /*!*разрывы между ячейками*!*/
+    /*column-gap: 20px;*/
+    /*row-gap: 10px;*/
+    /*!*сокращенный gap*!*/
+    /*!*по x и по у*!*/
+    /*gap: 20px*/
+
+    width: 600px;
+    height: 600px;
+    grid-template-columns: 1fr 2fr 1fr;
+    /*для одинаковых значений*/
+    /*grid-template-rows: repeat(3, 1fr);*/
+    grid-template-rows: 200px 200px 200px;
+    /*указываем размеры сетки для элементов не подоходящих под явную сетку*/
+    grid-auto-rows: 200px;
+}
+
+.grid-elem {
+    /*height: 50px;*/
+    background-color: rgba(1, 1, 96, 1);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
