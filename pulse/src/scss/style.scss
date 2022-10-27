@@ -1,6 +1,7 @@
 @import 'base/variables';
-
-
+@import 'libs/bootstrap-grid.min';
+@import "libs/font";
+//@import "libs/slick";
 * {
   font-family: 'Museo Sans Cyrl', sans-serif;
   box-sizing: border-box;
