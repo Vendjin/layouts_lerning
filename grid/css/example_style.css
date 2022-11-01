@@ -1,39 +1,30 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.container {
-    width: 1140px;
-    margin: 0 auto;
+.grid-container {
+  width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  padding: 105px 0 66px 0;
+  grid-template-columns: repeat(4, 240px);
+  grid-template-rows: repeat(2, minmax(260px, auto));
+  column-gap: 60px;
+  row-gap: 75px;
+  grid-auto-rows: 260px;
 }
 
-
-.example {
-    min-height: 750px;
-    background-color: aliceblue;
-    padding: 105px 0 66px 0;
+.news-item .news-item__img {
+  width: 100%;
+}
+.news-item .news-item__description {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-.example .example__items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 60px;
-    row-gap: 75px;
-}
-
-.example .example__items .example__item {
-    max-width: 240px;
-    max-height: 260px;
-}
-.example .example__items .example__item .example__description{
-    margin-top: 15px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-}
-
+/*# sourceMappingURL=example_style.css.map */

@@ -6,28 +6,68 @@
 
 .grid-container {
     display: grid;
+    /*размеры контейнера*/
+    /*width: 600px;*/
+    /*height: 600px;*/
 
+
+    /*указываем размеры сетки для элементов не подходящих под явную сетку*/
+    /*grid-auto-rows: 200px;*/
+
+
+    /*объявление колонок и строк*/
     /*grid-template-columns: 200px 300px 200px;*/
     /*grid-template-rows: 60px 100px 60px;*/
     /*!*сокращение rows & column*!*/
     /*grid-template: 60px 100px 60px / 200px 300px 200px;*/
 
+
     /*!*разрывы между ячейками*!*/
     /*column-gap: 20px;*/
     /*row-gap: 10px;*/
+
     /*!*сокращенный gap*!*/
     /*!*по x и по у*!*/
     /*gap: 20px*/
 
-    width: 600px;
-    height: 600px;
-    grid-template-columns: 1fr 2fr 1fr;
-    /*для одинаковых значений*/
+    /*указание размера ячеек с авторасчетом fr исходя из размера контейнера*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+
+    /* repeat для одинаковых значений*/
     /*grid-template-rows: repeat(3, 1fr);*/
-    grid-template-rows: 200px 200px 200px;
-    /*указываем размеры сетки для элементов не подоходящих под явную сетку*/
-    grid-auto-rows: 200px;
+    /*grid-template-rows: 200px 200px 200px;*/
+
+
+    /*задаем минимальное и максимальное значение гридов, удобно для адаптации*/
+    /*grid-template-columns: minmax(100px, 300px) minmax(100px, 300px) minmax(100px, 300px);*/
+    /*grid-template-columns: repeat(3, minmax(100px, 300px));*/
+    /*!*grid-template-rows: repeat(3, 200px);*!*/
+    /*!*автоматическое подстраивание высоты элемента исходя из встроенного контента*!*/
+    /*grid-template-rows: repeat(3, auto);*/
+
+
+    /*свойство auto-fill занимает элементами исходя из размеров экрана и column
+    как бы оставляя место под будущие элементы */
+    /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+    /*grid-template-rows: repeat(3, minmax(100px, auto));*/
+    /*grid-auto-rows: minmax(100px, auto);*/
+    /*gap: 10px;*/
+
+
+    /*свойство auto-fit растягиваются на весь экран*/
+    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+    /*grid-template-rows: repeat(3, minmax(100px, auto));*/
+    /*grid-auto-rows: minmax(100px, auto);*/
+    /*gap: 10px;*/
+
+    /*!*свойство auto-flow - указывает куда будет расти неявный грид и меняет порядок элементов*/
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    grid-auto-flow: column;
 }
+
 
 .grid-elem {
     /*height: 50px;*/
@@ -38,4 +78,79 @@
     font-size: 26px;
     border: 1px solid #000;
     border-radius: 4px;
+}
+
+.grid-second-container{
+    height: 450px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+
+    /*один из вариантов задать имена линий и размеры */
+    /*grid-template-columns: [col1-s] 150px [col2-s] 150px [col3-s] 150px;*/
+    /*grid-template-rows: [row1-s] 150px [row2-s] 150px [row3-s] 150px;*/
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+
+    /*выравнивание всех элементов по вертикали (снизу/с верху)*/
+    align-items: stretch;
+
+    /*выравнивание элементов по горизонтали*/
+    justify-items: stretch;
+
+    /*выравнивание всего контейнера по горизонтали*/
+    justify-content: center;
+
+    /*выравнивание всего контейнера по вертикали*/
+    align-content: center;
+
+
+    /*place-content: justify-content + align-content;*/
+    /*place-content: center center;*/
+
+
+    /*place-items: justify-items + align-items;*/
+    /*place-items: stretch center;*/
+}
+
+#first{
+    /*начинается с 1 линии колоночной оси*/
+    /*grid-column-start: 1;*/
+    /*grid-column-end: 3;*/
+
+    /*сокращенное написание*/
+    grid-column: 1 / 3;
+
+    /*возможность обращения по менам в grid-template-columns*/
+    /*grid-column: col1-s/col3-s;*/
+
+    /*place-self: justify-self + align-self;*/
+}
+
+#second{
+    /*grid-row-start: 3;*/
+    /*grid-row-end: 4;*/
+    grid-row: 3 / 4;
+    /*grid-column-start: 2;*/
+    grid-column: 2;
+}
+
+#third{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#one{
+    /*выравнивание только для 1 элемента*/
+    align-self: center;
+}
+
+.grid-third-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
 }

@@ -1,0 +1,36 @@
+$font-family_1: 'Roboto', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-family_1;
+}
+
+.grid-container {
+    width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    padding: 105px 0 66px 0;
+    grid-template-columns: repeat(4, 240px);
+    //меняем высоту на minmax, дабы увеличивалось вместе с контентом,
+    //а не наезжало на нижестоящий элемент
+    //grid-template-rows: repeat(2, 260px);
+    grid-template-rows: repeat(2, minmax(260px, auto));
+    column-gap: 60px;
+    row-gap: 75px;
+    grid-auto-rows: 260px;
+}
+
+.news-item {
+    .news-item__img {
+        width: 100%;
+    }
+
+    .news-item__description {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
