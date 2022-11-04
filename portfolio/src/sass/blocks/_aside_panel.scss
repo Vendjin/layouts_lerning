@@ -1,0 +1,32 @@
+.aside_panel {
+    position: fixed;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+    z-index: 3;
+    top: 230px;
+    left: 50px;
+
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: black;
+    }
+
+    &__text{
+        height: 25px;
+        width: 155px;
+
+        span{
+            width: 155px;
+            display: block;
+            transform: rotate(-90deg) translate(-30%);
+
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+}
