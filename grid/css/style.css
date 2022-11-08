@@ -149,6 +149,7 @@
 .grid-third-container{
     margin-top: 50px;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, minmax(150px, 300px));
     grid-template-rows: repeat(3, minmax(100px, auto));
     grid-auto-rows: minmax(100px, auto);
@@ -198,4 +199,12 @@
         "message message"
         "footer footer";
     }
+}
+
+.divider{
+    width: 60px;
+    height: 3px;
+    background-color: gold;
+    margin-top: 25px;
+    border: 1px solid #000;
 }
