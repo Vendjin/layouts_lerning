@@ -32,35 +32,38 @@
         }
     }
 
-    .resume{
+    .resume {
         padding-top: 80px;
-        &__wrapper{
+
+        &__wrapper {
             padding: 30px 15px 0 15px;
-            grid-template-columns: repeat(2,auto);
+            grid-template-columns: repeat(2, auto);
             column-gap: 100px;
         }
     }
 
-    .skills{
+    .skills {
         padding-top: 80px;
-        &__wrapper{
-            grid-template-columns: repeat(4,minmax(230px,auto));
-            grid-template-rows: repeat(2,minmax(230px,auto));
-            grid-auto-rows: minmax(230px,auto);
+
+        &__wrapper {
+            grid-template-columns: repeat(4, minmax(230px, auto));
+            grid-template-rows: repeat(2, minmax(230px, auto));
+            grid-auto-rows: minmax(230px, auto);
         }
 
-        &__item{
+        &__item {
             padding: 20px 20px;
         }
-        &__progress{
+
+        &__progress {
             padding-top: 60px;
-            grid-template-columns: repeat(3,290px);
+            grid-template-columns: repeat(3, 290px);
             grid-auto-rows: minmax(70px, auto);
         }
 
-        &__elem{
-            &-progress_bar{
-                &:before{
+        &__elem {
+            &-progress_bar {
+                &:before {
                     width: 290px;
                 }
             }
@@ -68,14 +71,16 @@
 
     }
 
-    .portfolio{
+    .portfolio {
         padding-top: 80px;
-        &__wrapper{
+
+        &__wrapper {
             grid-template-columns: repeat(auto-fit, 280px);
             grid-auto-rows: 280px;
             justify-content: space-around;
             row-gap: 20px;
-            .horizontal, .verical{
+
+            .horizontal, .verical {
                 grid-row: unset;
                 grid-column: unset;
             }
@@ -83,9 +88,10 @@
         }
     }
 
-    .contacts{
+    .contacts {
         padding-top: 80px;
-        &__wrapper{
+
+        &__wrapper {
             padding: 0;
             grid-template-columns: 350px 590px;
         }
@@ -97,44 +103,47 @@
         max-width: 720px;
     }
 
-    .about{
+    .about {
         padding-top: 80px;
-        &__wrapper{
+
+        &__wrapper {
             grid-template-columns: 300px 390px;
         }
 
-        &__skills{
+        &__skills {
             grid-template: repeat(3,auto)/repeat(1, auto);
-            &-item{
+
+            &-item {
                 grid-template-columns: 40px auto;
             }
         }
     }
 
-    .skills{
-        &__wrapper{
-            grid-template-columns: repeat(3,minmax(230px,auto));
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3, minmax(230px, auto));
         }
 
-        &__progress{
+        &__progress {
             padding-top: 60px;
-            grid-template-columns: repeat(2,335px);
+            grid-template-columns: repeat(2, 335px);
         }
 
-        &__elem{
-            &-progress_bar{
-                &:before{
+        &__elem {
+            &-progress_bar {
+                &:before {
                     width: 335px;
                 }
             }
         }
     }
 
-    .contacts{
-        &__wrapper{
+    .contacts {
+        &__wrapper {
             padding: 0 35px 0 52px;
         }
-        &__photo{
+
+        &__photo {
             display: none;
         }
     }
@@ -146,8 +155,8 @@
         max-width: 540px;
     }
 
-    .title{
-        &_fz36{
+    .title {
+        &_fz36 {
             font-size: 24px;
             line-height: 36px;
         }
@@ -162,12 +171,13 @@
         }
     }
 
-    .about{
+    .about {
 
-        &__wrapper{
+        &__wrapper {
             grid-template: 350px auto auto / 1fr;
         }
-        &__photo{
+
+        &__photo {
             grid-row: unset;
         }
 
@@ -181,47 +191,50 @@
         }
     }
 
-    .resume{
-        &__wrapper{
+    .resume {
+        &__wrapper {
             column-gap: 50px;
         }
-        &__item{
-            &:before{
+
+        &__item {
+            &:before {
                 top: 21%
             }
-            &-head{
+
+            &-head {
                 padding: 30px 0 0 95px;
             }
 
-            &-icon{
+            &-icon {
                 top: 55%;
                 left: 22%;
             }
         }
     }
 
-    .skills{
-        &__wrapper{
-            grid-template-columns: repeat(2,minmax(230px,auto));
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2, minmax(230px, auto));
         }
 
-        &__progress{
+        &__progress {
             padding-top: 60px;
-            grid-template-columns: repeat(2,250px);
+            grid-template-columns: repeat(2, 250px);
         }
 
-        &__elem{
-            &-progress_bar{
-                &:before{
+        &__elem {
+            &-progress_bar {
+                &:before {
                     width: 250px;
                 }
             }
         }
     }
 
-    .portfolio{
+    .portfolio {
         padding-top: 60px;
-        &__wrapper{
+
+        &__wrapper {
             padding-top: 30px;
             grid-template-columns: repeat(auto-fit, 260px);
             grid-template-rows: repeat(auto-fit, 260px);
@@ -229,18 +242,18 @@
         }
     }
 
-    .contacts{
-        &__wrapper{
+    .contacts {
+        &__wrapper {
             padding-left: 0;
             grid-template-columns: 540px;
         }
 
-        &__form{
+        &__form {
             grid-template: 45px 140px 45px/repeat(2,260px);
             row-gap: 20px;
         }
 
-        &__triggers{
+        &__triggers {
             column-gap: 20px;
         }
     }
@@ -254,12 +267,13 @@
 
     }
 
-    .title{
-        &_fz48{
+    .title {
+        &_fz48 {
             font-size: 26px;
             line-height: 40px;
         }
-        &_fz36{
+
+        &_fz36 {
             font-size: 24px;
             line-height: 36px;
         }
@@ -294,41 +308,46 @@
         }
     }
 
-    .about{
+    .about {
         padding-top: 40px;
-        &__wrapper{
+
+        &__wrapper {
             grid-template: 300px auto auto / 1fr;
         }
-        &__skills{
+
+        &__skills {
             grid-template: repeat(3,auto)/repeat(1, auto);
-            &-item{
+
+            &-item {
                 grid-template-columns: 40px auto;
             }
         }
     }
 
-    .resume{
-        &__wrapper{
+    .resume {
+        &__wrapper {
             grid-template-columns: 1fr;
         }
-        &__item{
-            &:before{
+
+        &__item {
+            &:before {
                 top: 24%;
             }
-            &-icon{
+
+            &-icon {
                 left: 19%;
             }
         }
     }
 
-    .skills{
-        &__wrapper{
+    .skills {
+        &__wrapper {
             //grid-template: 1fr / 1fr;
             grid-template-columns: repeat(auto-fit, 265px);
             justify-content: center;
         }
 
-        &__progress{
+        &__progress {
             padding-top: 40px;
             grid-template-columns: repeat(auto-fit, 310px);
             //grid-template: 1fr / 300px;
@@ -336,13 +355,50 @@
             justify-content: center;
         }
 
-        &__elem{
+        &__elem {
             row-gap: 20px;
-            &-progress_bar{
-                &:before{
+
+            &-progress_bar {
+                &:before {
                     width: 310px;
                 }
             }
+        }
+
+    }
+
+    .contacts {
+        padding-bottom: 50px;
+        &__wrapper{
+            grid-template-columns: 300px;
+        }
+
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+
+        &__buttons {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
         }
     }
 
