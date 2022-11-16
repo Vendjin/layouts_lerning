@@ -373,7 +373,7 @@
         &__wrapper{
             grid-template-columns: 300px;
             justify-content: center;
-            padding-left: 45px;
+            padding-left: 35px;
         }
 
         &__form {
@@ -383,6 +383,7 @@
 
         &__textarea {
             grid-column: unset;
+            grid-row: unset;
             width: 100%;
         }
 
