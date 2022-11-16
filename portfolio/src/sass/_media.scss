@@ -368,13 +368,17 @@
     }
 
     .contacts {
+        padding-top: 60px;
         padding-bottom: 50px;
         &__wrapper{
             grid-template-columns: 300px;
+            justify-content: center;
+            padding-left: 45px;
         }
 
         &__form {
             grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+
         }
 
         &__textarea {
